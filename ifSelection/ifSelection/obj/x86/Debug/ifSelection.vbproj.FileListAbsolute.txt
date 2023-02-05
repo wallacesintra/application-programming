@@ -1,0 +1,12 @@
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\bin\Debug\ifSelection.exe
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\bin\Debug\ifSelection.pdb
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\bin\Debug\ifSelection.xml
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\obj\x86\Debug\ifSelection.Form1.resources
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\obj\x86\Debug\ifSelection.Resources.resources
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\obj\x86\Debug\ifSelection.vbproj.GenerateResource.Cache
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\obj\x86\Debug\ifSelection.exe
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\obj\x86\Debug\ifSelection.xml
+C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\obj\x86\Debug\ifSelection.pdb
+D:\application programming(VB.net)\ifSelection\ifSelection\obj\x86\Debug\ifSelection.exe
+D:\application programming(VB.net)\ifSelection\ifSelection\obj\x86\Debug\ifSelection.xml
+D:\application programming(VB.net)\ifSelection\ifSelection\obj\x86\Debug\ifSelection.pdb
