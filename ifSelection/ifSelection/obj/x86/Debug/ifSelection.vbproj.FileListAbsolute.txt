@@ -10,3 +10,6 @@ C:\Users\Fredrick\AppData\Local\Temporary Projects\ifSelection\obj\x86\Debug\ifS
 D:\application programming(VB.net)\ifSelection\ifSelection\obj\x86\Debug\ifSelection.exe
 D:\application programming(VB.net)\ifSelection\ifSelection\obj\x86\Debug\ifSelection.xml
 D:\application programming(VB.net)\ifSelection\ifSelection\obj\x86\Debug\ifSelection.pdb
+D:\application programming(VB.net)\application-programming\ifSelection\ifSelection\obj\x86\Debug\ifSelection.exe
+D:\application programming(VB.net)\application-programming\ifSelection\ifSelection\obj\x86\Debug\ifSelection.xml
+D:\application programming(VB.net)\application-programming\ifSelection\ifSelection\obj\x86\Debug\ifSelection.pdb
