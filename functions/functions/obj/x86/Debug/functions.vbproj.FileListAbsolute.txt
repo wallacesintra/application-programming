@@ -1,0 +1,9 @@
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\bin\Debug\functions.exe
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\bin\Debug\functions.pdb
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\bin\Debug\functions.xml
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\obj\x86\Debug\functions.Form1.resources
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\obj\x86\Debug\functions.Resources.resources
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\obj\x86\Debug\functions.vbproj.GenerateResource.Cache
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\obj\x86\Debug\functions.exe
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\obj\x86\Debug\functions.xml
+C:\Users\Fredrick\AppData\Local\Temporary Projects\functions\obj\x86\Debug\functions.pdb

@@ -30,39 +30,49 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(123, 33)
+        Me.Label1.Location = New System.Drawing.Point(143, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 13)
+        Me.Label1.Size = New System.Drawing.Size(77, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Enter marks:  "
         '
         'TxtMarks
         '
-        Me.TxtMarks.Location = New System.Drawing.Point(239, 30)
+        Me.TxtMarks.Location = New System.Drawing.Point(279, 37)
+        Me.TxtMarks.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TxtMarks.MaxLength = 3
         Me.TxtMarks.Name = "TxtMarks"
-        Me.TxtMarks.Size = New System.Drawing.Size(100, 20)
+        Me.TxtMarks.Size = New System.Drawing.Size(116, 21)
         Me.TxtMarks.TabIndex = 1
         '
         'btnGrader
         '
-        Me.btnGrader.Location = New System.Drawing.Point(239, 115)
+        Me.btnGrader.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnGrader.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btnGrader.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGrader.ForeColor = System.Drawing.SystemColors.Control
+        Me.btnGrader.Location = New System.Drawing.Point(279, 142)
+        Me.btnGrader.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnGrader.Name = "btnGrader"
-        Me.btnGrader.Size = New System.Drawing.Size(75, 23)
+        Me.btnGrader.Size = New System.Drawing.Size(87, 28)
         Me.btnGrader.TabIndex = 2
         Me.btnGrader.Text = "Grade"
-        Me.btnGrader.UseVisualStyleBackColor = True
+        Me.btnGrader.UseVisualStyleBackColor = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(654, 261)
+        Me.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.ClientSize = New System.Drawing.Size(839, 321)
         Me.Controls.Add(Me.btnGrader)
         Me.Controls.Add(Me.TxtMarks)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -28,4 +28,8 @@
         End If
 
     End Sub
+
+    Private Sub TxtMarks_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtMarks.TextChanged
+
+    End Sub
 End Class
