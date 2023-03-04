@@ -19,4 +19,8 @@
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub profileImage_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles profileImage.Click
+
+    End Sub
 End Class

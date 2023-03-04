@@ -1,0 +1,10 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="400" Width="600">
+    <Grid Background="#FF0058C3" Opacity="1">
+        <Label Content="MyProgress" Height="92" HorizontalAlignment="Left" Margin="185,68,0,0" Name="Label1" VerticalAlignment="Top" Width="238" FontFamily="Franklin Gothic" FontSize="40" FontStretch="Normal" FontStyle="Normal"  FontWeight="{Binding}" FlowDirection="LeftToRight" Foreground="White" />
+        <Button Content="Sign Up" Height="25" HorizontalAlignment="Left" Margin="185,195,0,0" Name="Button1" VerticalAlignment="Top" Width="100" FontSize="15" Background="White" />
+        <Button Content="Log In " Height="25" HorizontalAlignment="Right" Margin="0,195,170,0" Name="Button2" VerticalAlignment="Top" Width="100" FontSize="15" Padding="0.5" Background="White" />
+    </Grid>
+</Window>

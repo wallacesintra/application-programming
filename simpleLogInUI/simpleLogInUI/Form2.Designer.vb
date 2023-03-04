@@ -94,7 +94,8 @@ Partial Class Form2
         Me.profileImage.Location = New System.Drawing.Point(6, 0)
         Me.profileImage.Margin = New System.Windows.Forms.Padding(6)
         Me.profileImage.Name = "profileImage"
-        Me.profileImage.Size = New System.Drawing.Size(218, 223)
+        Me.profileImage.Size = New System.Drawing.Size(150, 150)
+        Me.profileImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.profileImage.TabIndex = 0
         Me.profileImage.TabStop = False
         '
