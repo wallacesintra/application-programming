@@ -24,13 +24,13 @@ Partial Class signUp
     Private Sub InitializeComponent()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.agreeCheck = New System.Windows.Forms.CheckBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.btnSignUp = New System.Windows.Forms.Button()
+        Me.chckBxAgree = New System.Windows.Forms.CheckBox()
+        Me.txtBxPassword = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtBxEmployeeId = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.nameSignUp = New System.Windows.Forms.TextBox()
+        Me.txtBxUserName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,13 +53,13 @@ Partial Class signUp
         '
         'SplitContainer1.Panel2
         '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.agreeCheck)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.TextBox2)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.btnSignUp)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.chckBxAgree)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.txtBxPassword)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label5)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.TextBox1)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.txtBxEmployeeId)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label4)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.nameSignUp)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.txtBxUserName)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label3)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label2)
         Me.SplitContainer1.Panel2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -79,38 +79,40 @@ Partial Class signUp
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "MyProgress"
         '
-        'Button1
+        'btnSignUp
         '
-        Me.Button1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(196, 440)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(144, 45)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "SIGN UP"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnSignUp.BackColor = System.Drawing.Color.RoyalBlue
+        Me.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSignUp.FlatAppearance.BorderSize = 0
+        Me.btnSignUp.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSignUp.ForeColor = System.Drawing.Color.White
+        Me.btnSignUp.Location = New System.Drawing.Point(196, 440)
+        Me.btnSignUp.Name = "btnSignUp"
+        Me.btnSignUp.Size = New System.Drawing.Size(144, 45)
+        Me.btnSignUp.TabIndex = 8
+        Me.btnSignUp.Text = "SIGN UP"
+        Me.btnSignUp.UseVisualStyleBackColor = False
         '
-        'agreeCheck
+        'chckBxAgree
         '
-        Me.agreeCheck.AutoSize = True
-        Me.agreeCheck.ForeColor = System.Drawing.Color.Black
-        Me.agreeCheck.Location = New System.Drawing.Point(42, 377)
-        Me.agreeCheck.Name = "agreeCheck"
-        Me.agreeCheck.Size = New System.Drawing.Size(369, 26)
-        Me.agreeCheck.TabIndex = 7
-        Me.agreeCheck.Text = "I agree with the terms and conditions"
-        Me.agreeCheck.UseVisualStyleBackColor = True
+        Me.chckBxAgree.AutoSize = True
+        Me.chckBxAgree.Font = New System.Drawing.Font("Century Gothic", 10.25!)
+        Me.chckBxAgree.ForeColor = System.Drawing.Color.Black
+        Me.chckBxAgree.Location = New System.Drawing.Point(42, 377)
+        Me.chckBxAgree.Name = "chckBxAgree"
+        Me.chckBxAgree.Size = New System.Drawing.Size(284, 23)
+        Me.chckBxAgree.TabIndex = 7
+        Me.chckBxAgree.Text = "I agree with the terms and conditions"
+        Me.chckBxAgree.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'txtBxPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(42, 309)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(417, 31)
-        Me.TextBox2.TabIndex = 6
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.txtBxPassword.Location = New System.Drawing.Point(42, 309)
+        Me.txtBxPassword.MaxLength = 8
+        Me.txtBxPassword.Name = "txtBxPassword"
+        Me.txtBxPassword.Size = New System.Drawing.Size(417, 31)
+        Me.txtBxPassword.TabIndex = 6
+        Me.txtBxPassword.UseSystemPasswordChar = True
         '
         'Label5
         '
@@ -118,16 +120,16 @@ Partial Class signUp
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(38, 274)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(99, 21)
+        Me.Label5.Size = New System.Drawing.Size(82, 21)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "PASSWORD"
+        Me.Label5.Text = "Password"
         '
-        'TextBox1
+        'txtBxEmployeeId
         '
-        Me.TextBox1.Location = New System.Drawing.Point(42, 222)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(417, 31)
-        Me.TextBox1.TabIndex = 4
+        Me.txtBxEmployeeId.Location = New System.Drawing.Point(42, 222)
+        Me.txtBxEmployeeId.Name = "txtBxEmployeeId"
+        Me.txtBxEmployeeId.Size = New System.Drawing.Size(417, 31)
+        Me.txtBxEmployeeId.TabIndex = 4
         '
         'Label4
         '
@@ -135,16 +137,16 @@ Partial Class signUp
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(38, 186)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(114, 21)
+        Me.Label4.Size = New System.Drawing.Size(107, 21)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "EMPLOYEE ID"
+        Me.Label4.Text = "Employee ID"
         '
-        'nameSignUp
+        'txtBxUserName
         '
-        Me.nameSignUp.Location = New System.Drawing.Point(42, 138)
-        Me.nameSignUp.Name = "nameSignUp"
-        Me.nameSignUp.Size = New System.Drawing.Size(417, 31)
-        Me.nameSignUp.TabIndex = 2
+        Me.txtBxUserName.Location = New System.Drawing.Point(42, 138)
+        Me.txtBxUserName.Name = "txtBxUserName"
+        Me.txtBxUserName.Size = New System.Drawing.Size(417, 31)
+        Me.txtBxUserName.TabIndex = 2
         '
         'Label3
         '
@@ -152,9 +154,9 @@ Partial Class signUp
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(38, 103)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 21)
+        Me.Label3.Size = New System.Drawing.Size(58, 21)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "NAME"
+        Me.Label3.Text = "Name"
         '
         'Label2
         '
@@ -185,13 +187,13 @@ Partial Class signUp
     End Sub
     Friend WithEvents SplitContainer1 As System.Windows.Forms.SplitContainer
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtBxEmployeeId As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents nameSignUp As System.Windows.Forms.TextBox
+    Friend WithEvents txtBxUserName As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents agreeCheck As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents btnSignUp As System.Windows.Forms.Button
+    Friend WithEvents chckBxAgree As System.Windows.Forms.CheckBox
+    Friend WithEvents txtBxPassword As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class
