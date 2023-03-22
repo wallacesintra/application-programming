@@ -3,13 +3,9 @@ Public Class Form1
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub btnId_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnId.Click
-        ' Dim conn As New OleDbConnection
-        'conn.ConnectionString = ("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\database1\dblectures.mdb")
-        ' conn.Open()
+        'Dim conn As New OleDbConnection
+        ' conn.ConnectionString = ("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\database1\dblectures.mdb")
+        'conn.Open()
         'Dim strsql As String
         'strsql = "SELECT ID,Last Name,First Name,Gender FROM employees WHERE ID=" + 0 + ""
         'strsql = "SELECT ID, [Last Name], [First Name], Gender FROM employees WHERE ID = '+ 0 +'"
@@ -25,19 +21,36 @@ Public Class Form1
 
 
         'conn.Close()
-        Dim connectionString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\database1\dblectures.mdb"
-        'Dim query As String = "SELECT ID, [Last Name], [First Name], Gender FROM employees WHERE ID = '+ 0 +'"
-        Dim query As String = "SELECT [Last Name] FROM employees WHERE ID ='+ 0 +' "
-        Dim command As New OleDbCommand(query)
 
-        command.Connection = New OleDbConnection(connectionString)
-        command.Connection.Open()
-        Dim columnValue As String = command.ExecuteScalar()
-        command.Connection.Close()
-        lblFirstName.Text = columnValue
-        'lblLastName.Text = myreader("Last Name")
-        'lblGender.Text = myreader("Gender")
-        command.Dispose()
-        command.Connection.Dispose()
+
+        'working
+        Dim connectionString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\database1\dblectures.mdb"
+        Dim connection As New OleDbConnection(connectionString)
+        connection.Open()
+        'Dim command As New OleDbCommand("SELECT * FROM employees", connection) --- select all
+        'Dim command As New OleDbCommand("SELECT * FROM employees WHERE ID = 3", connection) -- id
+
+        Dim id As Integer = 3
+        'Dim idValue As Integer = Integer.Parse(textBox1.Text)
+        Dim command As New OleDbCommand("SELECT * FROM employees WHERE ID = @id", connection)
+        command.Parameters.AddWithValue("@id", id)
+
+        Dim reader As OleDbDataReader = command.ExecuteReader()
+        If reader.HasRows Then
+            reader.Read()
+            lblFirstName.Text = reader("Last Name").ToString()
+            lblLastName.Text = reader("First Name").ToString()
+            lblGender.Text = reader("Gender").ToString
+
+            '..
+        End If
+        reader.Close()
+        connection.Close()
+
+    End Sub
+
+    Private Sub btnId_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnId.Click
+
+
     End Sub
 End Class

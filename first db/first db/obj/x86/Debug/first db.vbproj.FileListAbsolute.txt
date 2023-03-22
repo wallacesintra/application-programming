@@ -1,1 +1,11 @@
 D:\application programming(VB.net)\application-programming\first db\first db\bin\Debug\first db.exe.config
+D:\application programming(VB.net)\application-programming\first db\first db\bin\Debug\dblectures.mdb
+D:\application programming(VB.net)\application-programming\first db\first db\bin\Debug\first db.exe
+D:\application programming(VB.net)\application-programming\first db\first db\bin\Debug\first db.pdb
+D:\application programming(VB.net)\application-programming\first db\first db\bin\Debug\first db.xml
+D:\application programming(VB.net)\application-programming\first db\first db\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\application programming(VB.net)\application-programming\first db\first db\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\application programming(VB.net)\application-programming\first db\first db\obj\x86\Debug\first db.vbproj.GenerateResource.Cache
+D:\application programming(VB.net)\application-programming\first db\first db\obj\x86\Debug\first db.exe
+D:\application programming(VB.net)\application-programming\first db\first db\obj\x86\Debug\first db.xml
+D:\application programming(VB.net)\application-programming\first db\first db\obj\x86\Debug\first db.pdb
