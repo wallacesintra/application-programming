@@ -28,17 +28,15 @@ Partial Class employeesInterface
         Me.lblUserName = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.profileImg = New System.Windows.Forms.PictureBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnViewCourse = New System.Windows.Forms.Button()
-        Me.lblCourseName = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lstCourses = New System.Windows.Forms.ListBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         CType(Me.profileImg, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,7 +59,8 @@ Partial Class employeesInterface
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.White
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Panel2)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.lstCourses)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Panel1)
         Me.SplitContainer1.Panel2.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SplitContainer1.Panel2.ForeColor = System.Drawing.Color.White
@@ -116,36 +115,6 @@ Partial Class employeesInterface
         Me.profileImg.TabIndex = 0
         Me.profileImg.TabStop = False
         '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.btnViewCourse)
-        Me.Panel2.Controls.Add(Me.lblCourseName)
-        Me.Panel2.Location = New System.Drawing.Point(4, 42)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(459, 65)
-        Me.Panel2.TabIndex = 1
-        '
-        'btnViewCourse
-        '
-        Me.btnViewCourse.BackColor = System.Drawing.Color.RoyalBlue
-        Me.btnViewCourse.Location = New System.Drawing.Point(365, 15)
-        Me.btnViewCourse.Name = "btnViewCourse"
-        Me.btnViewCourse.Size = New System.Drawing.Size(75, 32)
-        Me.btnViewCourse.TabIndex = 1
-        Me.btnViewCourse.Text = "view"
-        Me.btnViewCourse.UseVisualStyleBackColor = False
-        '
-        'lblCourseName
-        '
-        Me.lblCourseName.AutoSize = True
-        Me.lblCourseName.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCourseName.ForeColor = System.Drawing.Color.Black
-        Me.lblCourseName.Location = New System.Drawing.Point(4, 24)
-        Me.lblCourseName.Name = "lblCourseName"
-        Me.lblCourseName.Size = New System.Drawing.Size(117, 18)
-        Me.lblCourseName.TabIndex = 0
-        Me.lblCourseName.Text = "Course Name1"
-        '
         'Panel1
         '
         Me.Panel1.AutoSize = True
@@ -167,6 +136,25 @@ Partial Class employeesInterface
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Courses"
         '
+        'lstCourses
+        '
+        Me.lstCourses.FormattingEnabled = True
+        Me.lstCourses.ItemHeight = 21
+        Me.lstCourses.Location = New System.Drawing.Point(4, 43)
+        Me.lstCourses.Name = "lstCourses"
+        Me.lstCourses.Size = New System.Drawing.Size(459, 151)
+        Me.lstCourses.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Button1.Location = New System.Drawing.Point(482, 42)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(113, 33)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "view courses"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'employeesInterface
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -184,8 +172,6 @@ Partial Class employeesInterface
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         CType(Me.profileImg, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -199,7 +185,6 @@ Partial Class employeesInterface
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents lblCourseName As System.Windows.Forms.Label
-    Friend WithEvents btnViewCourse As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents lstCourses As System.Windows.Forms.ListBox
 End Class

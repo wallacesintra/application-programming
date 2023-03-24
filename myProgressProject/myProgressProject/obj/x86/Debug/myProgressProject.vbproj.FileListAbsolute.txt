@@ -12,3 +12,6 @@ D:\application programming(VB.net)\application-programming\myProgressProject\myP
 D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\WindowsApplication1.employeesInterface.resources
 D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\WindowsApplication1.courseUI.resources
 D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\WindowsApplication1.trainingManager.resources
+D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\bin\Debug\dblectures.mdb
+D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\Interop.Microsoft.Office.Core.dll
+D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\myProgressProject.vbproj.ResolveComReference.cache

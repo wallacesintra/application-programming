@@ -111,9 +111,9 @@ Partial Class logIn
         Me.chckBoxEmployee.ForeColor = System.Drawing.Color.Black
         Me.chckBoxEmployee.Location = New System.Drawing.Point(180, 185)
         Me.chckBoxEmployee.Name = "chckBoxEmployee"
-        Me.chckBoxEmployee.Size = New System.Drawing.Size(109, 25)
+        Me.chckBoxEmployee.Size = New System.Drawing.Size(66, 25)
         Me.chckBoxEmployee.TabIndex = 10
-        Me.chckBoxEmployee.Text = "Employee"
+        Me.chckBoxEmployee.Text = "Staff"
         Me.chckBoxEmployee.UseVisualStyleBackColor = True
         '
         'Label5

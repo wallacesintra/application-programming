@@ -1,4 +1,6 @@
-﻿Public Class signUp
+﻿Imports System.Data.OleDb
+
+Public Class signUp
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
@@ -29,12 +31,36 @@
 
         If chckBxAgree.Checked Then
             MessageBox.Show("Hello " & employeeObj.Name)
+
+            'Dim connString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\YourUsername\Documents\YourDatabase.mdb;"
+            'Dim connString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\database1\dblectures.mdb;"
+            'Dim conn As New OleDbConnection(connString)
+            'conn.Open()
+
+            'Create insert command
+            'Dim cmd As New OleDbCommand("INSERT INTO employees (Name, Password, ID) VALUES (@Name, @Password, @ID)", conn)
+            'Add parameters to the command
+            'cmd.Parameters.AddWithValue("@Name", userName)
+            'cmd.Parameters.AddWithValue("@Password", employeeId)
+            'cmd.Parameters.AddWithValue("@ID", userPass)
+
+            'Execute the command
+            'cmd.ExecuteNonQuery()
+
+            'Close the connection
+            'conn.Close()
+            'Display message box to inform user that registration was successful
+            'MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+
             Dim logIn As New logIn()
             logIn.ShowDialog()
 
         Else
             MessageBox.Show("Please agree with the terms and conditions")
         End If
+
+
 
 
     End Sub

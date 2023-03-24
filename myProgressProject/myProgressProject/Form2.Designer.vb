@@ -24,6 +24,7 @@ Partial Class courseUI
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblCourseTitle = New System.Windows.Forms.Label()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,11 +49,20 @@ Partial Class courseUI
         Me.lblCourseTitle.TabIndex = 0
         Me.lblCourseTitle.Text = "CourseName"
         '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Location = New System.Drawing.Point(13, 66)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(839, 476)
+        Me.WebBrowser1.TabIndex = 1
+        '
         'courseUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(968, 610)
+        Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -65,4 +75,5 @@ Partial Class courseUI
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblCourseTitle As System.Windows.Forms.Label
+    Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
 End Class
