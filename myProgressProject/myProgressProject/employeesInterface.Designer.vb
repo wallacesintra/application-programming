@@ -28,10 +28,10 @@ Partial Class employeesInterface
         Me.lblUserName = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.profileImg = New System.Windows.Forms.PictureBox()
+        Me.btnViewCourse = New System.Windows.Forms.Button()
+        Me.lstCourses = New System.Windows.Forms.ListBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lstCourses = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -59,7 +59,7 @@ Partial Class employeesInterface
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.White
-        Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.btnViewCourse)
         Me.SplitContainer1.Panel2.Controls.Add(Me.lstCourses)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Panel1)
         Me.SplitContainer1.Panel2.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -115,6 +115,25 @@ Partial Class employeesInterface
         Me.profileImg.TabIndex = 0
         Me.profileImg.TabStop = False
         '
+        'btnViewCourse
+        '
+        Me.btnViewCourse.BackColor = System.Drawing.Color.RoyalBlue
+        Me.btnViewCourse.Location = New System.Drawing.Point(482, 42)
+        Me.btnViewCourse.Name = "btnViewCourse"
+        Me.btnViewCourse.Size = New System.Drawing.Size(113, 33)
+        Me.btnViewCourse.TabIndex = 2
+        Me.btnViewCourse.Text = "view courses"
+        Me.btnViewCourse.UseVisualStyleBackColor = False
+        '
+        'lstCourses
+        '
+        Me.lstCourses.FormattingEnabled = True
+        Me.lstCourses.ItemHeight = 21
+        Me.lstCourses.Location = New System.Drawing.Point(4, 43)
+        Me.lstCourses.Name = "lstCourses"
+        Me.lstCourses.Size = New System.Drawing.Size(459, 151)
+        Me.lstCourses.TabIndex = 1
+        '
         'Panel1
         '
         Me.Panel1.AutoSize = True
@@ -135,25 +154,6 @@ Partial Class employeesInterface
         Me.Label1.Size = New System.Drawing.Size(92, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Courses"
-        '
-        'lstCourses
-        '
-        Me.lstCourses.FormattingEnabled = True
-        Me.lstCourses.ItemHeight = 21
-        Me.lstCourses.Location = New System.Drawing.Point(4, 43)
-        Me.lstCourses.Name = "lstCourses"
-        Me.lstCourses.Size = New System.Drawing.Size(459, 151)
-        Me.lstCourses.TabIndex = 1
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Button1.Location = New System.Drawing.Point(482, 42)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(113, 33)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "view courses"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'employeesInterface
         '
@@ -185,6 +185,6 @@ Partial Class employeesInterface
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnViewCourse As System.Windows.Forms.Button
     Friend WithEvents lstCourses As System.Windows.Forms.ListBox
 End Class

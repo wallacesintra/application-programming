@@ -37,13 +37,29 @@ Public Class logIn
                         employeeUI.lblUserId.Text = reader1("ID").ToString()
                         employeeUI.lblUserTitle.Text = reader1("Title").ToString()
                         employeeUI.ShowDialog()
+
+
                     End If
                     reader.Close()
                     conn.Close()
 
                 ElseIf chckBoxManager.Checked Then
-                    Dim trainerUi As New trainingManager
-                    trainerUi.ShowDialog()
+                    Dim command As New OleDbCommand("SELECT * FROM employees WHERE ID = @id", conn)
+                    command.Parameters.AddWithValue("@id", userIdLog)
+                    Dim reader1 As OleDbDataReader = command.ExecuteReader()
+                    If reader1.HasRows Then
+                        reader1.Read()
+                        Dim trainerUi As New trainingManager
+                        trainerUi.lblUserName.Text = reader1("Name").ToString()
+                        trainerUi.lblUserId.Text = reader1("ID").ToString()
+                        trainerUi.lblUserTitle.Text = reader1("Title").ToString()
+                        Dim managerKey As Integer = 2023
+                        Dim managerKeyInput As Integer = InputBox("Enter Manager Key No: ")
+                        If managerKey = managerKeyInput Then
+                            trainerUi.ShowDialog()
+                        End If
+                    End If
+
                 Else
                     MessageBox.Show("Please select your job title")
                 End If

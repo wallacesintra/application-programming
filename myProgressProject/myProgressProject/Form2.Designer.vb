@@ -25,6 +25,7 @@ Partial Class courseUI
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblCourseTitle = New System.Windows.Forms.Label()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,17 +52,29 @@ Partial Class courseUI
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(13, 66)
+        Me.WebBrowser1.Location = New System.Drawing.Point(1, 65)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(839, 476)
+        Me.WebBrowser1.Size = New System.Drawing.Size(969, 426)
         Me.WebBrowser1.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DarkBlue
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(448, 509)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(114, 38)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Completed"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'courseUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(968, 610)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -76,4 +89,5 @@ Partial Class courseUI
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblCourseTitle As System.Windows.Forms.Label
     Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

@@ -15,3 +15,6 @@ D:\application programming(VB.net)\application-programming\myProgressProject\myP
 D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\bin\Debug\dblectures.mdb
 D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\Interop.Microsoft.Office.Core.dll
 D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\myProgressProject.vbproj.ResolveComReference.cache
+D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\Interop.LCC11.dll
+D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\Interop.AcrobatAccessLib.dll
+D:\application programming(VB.net)\application-programming\myProgressProject\myProgressProject\obj\x86\Debug\Interop.AcroBrokerLib.dll

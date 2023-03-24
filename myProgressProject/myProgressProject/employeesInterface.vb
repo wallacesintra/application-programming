@@ -37,17 +37,12 @@ Public Class employeesInterface
 
     End Sub
 
-    ' Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
-    ' Open CourseDetailsForm with selected course ID
-    'If DataGridView1.SelectedRows.Count > 0 Then
-    'Dim courseId As Integer = CInt(DataGridView1.SelectedRows(0).Cells("courseId").Value)
-    'Dim courseDetailsForm As New Form2(courseId)
-
-    ' courseDetailsForm.ShowDialog()
-    'End If
-    ' End Sub
 
     Private Sub btnViewCourse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub btnViewCourse_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnViewCourse.Click
         ' Open the selected course in a new window
         If lstCourses.SelectedIndex <> -1 Then
             Dim courseName As String = lstCourses.SelectedItem.ToString()
@@ -55,7 +50,7 @@ Public Class employeesInterface
 
             ' Retrieve the path for the selected course
             Dim connString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\database1\dblectures.mdb;"
-            Dim query As String = "SELECT Content FROM Courses WHERE courseName=@name"
+            Dim query As String = "SELECT content FROM Courses WHERE courseName=@name"
             Dim dt As New DataTable()
 
             Using conn As New OleDb.OleDbConnection(connString)
